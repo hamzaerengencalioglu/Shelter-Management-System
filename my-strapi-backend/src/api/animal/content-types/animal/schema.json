@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "animals",
+  "info": {
+    "singularName": "animal",
+    "pluralName": "animals",
+    "displayName": "Animal",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "AnimalName": {
+      "type": "string"
+    },
+    "AnimalType": {
+      "type": "enumeration",
+      "enum": [
+        "Kedi",
+        "Köpek"
+      ]
+    },
+    "AnimalImage": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "AnimalAge": {
+      "type": "decimal",
+      "min": 0,
+      "max": 30
+    },
+    "AnimalAdopted": {
+      "type": "boolean"
+    },
+    "shelter": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::shelter.shelter",
+      "inversedBy": "animals"
+    },
+    "adoption_request": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::adoption-request.adoption-request",
+      "inversedBy": "animal"
+    },
+    "HealthStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Sağlıklı",
+        "Hasta",
+        "Tedavi Altında"
+      ]
+    },
+    "Color": {
+      "type": "enumeration",
+      "enum": [
+        "Siyah",
+        "Beyaz",
+        "Turuncu",
+        "Gri",
+        "Kahverengi",
+        "Çok Renkli"
+      ]
+    }
+  }
+}

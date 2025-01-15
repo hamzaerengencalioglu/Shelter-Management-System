@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shelter_managers",
+  "info": {
+    "singularName": "shelter-manager",
+    "pluralName": "shelter-managers",
+    "displayName": "ShelterManager"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ShelterManagerPassword": {
+      "type": "string"
+    },
+    "ShelterManagerName": {
+      "type": "string"
+    },
+    "ShelterManagerEmail": {
+      "type": "email"
+    },
+    "shelter": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::shelter.shelter",
+      "mappedBy": "shelter_manager"
+    }
+  }
+}

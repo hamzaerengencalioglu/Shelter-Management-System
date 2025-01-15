@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shelters",
+  "info": {
+    "singularName": "shelter",
+    "pluralName": "shelters",
+    "displayName": "Shelter",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ShelterName": {
+      "type": "string"
+    },
+    "ShelterContactNumber": {
+      "type": "string"
+    },
+    "ShelterLocation": {
+      "type": "string"
+    },
+    "animals": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::animal.animal",
+      "mappedBy": "shelter"
+    },
+    "ShelterCapacity": {
+      "type": "integer",
+      "min": 0
+    },
+    "shelter_manager": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::shelter-manager.shelter-manager",
+      "inversedBy": "shelter"
+    }
+  }
+}
