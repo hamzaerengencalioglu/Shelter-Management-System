@@ -20,7 +20,7 @@ function ShelterDashboard() {
           return;
         }
 
-        const url = "http://localhost:1337/api/shelters?populate=shelter_manager";
+        const url = "http://34.107.58.215:1337/api/shelters?populate=shelter_manager";
 
         const response = await fetch(url, {
           headers: {
@@ -68,7 +68,7 @@ function ShelterDashboard() {
 
     try {
       const response = await fetch(
-        `http://localhost:1337/api/shelters/${selectedShelter.id}`,
+        `http://34.107.58.215:1337/api/shelters/${selectedShelter.id}`,
         {
           method: "PUT",
           headers: {

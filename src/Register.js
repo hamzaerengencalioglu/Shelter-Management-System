@@ -43,7 +43,7 @@ function Register() {
     }
 
     try {
-      const response = await fetch("http://localhost:1337/api/adopters", {
+      const response = await fetch("http://34.107.58.215:1337/api/adopters", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

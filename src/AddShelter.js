@@ -14,7 +14,7 @@ function AddShelter() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:1337/api/shelters", {
+      const response = await fetch("http://34.107.58.215:1337/api/shelters", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

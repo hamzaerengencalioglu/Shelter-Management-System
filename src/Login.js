@@ -12,7 +12,7 @@ function Login() {
 
     try {
       // Adopter verilerini kontrol et
-      const adopterResponse = await fetch("http://localhost:1337/api/adopters", {
+      const adopterResponse = await fetch("http://34.107.58.215:1337/api/adopters", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -23,7 +23,7 @@ function Login() {
 
       // ShelterManager verilerini kontrol et
       const shelterManagerResponse = await fetch(
-        "http://localhost:1337/api/shelter-managers",
+        "http://34.107.58.215:1337/api/shelter-managers",
         {
           method: "GET",
           headers: {
@@ -35,7 +35,7 @@ function Login() {
       const shelterManagerData = await shelterManagerResponse.json();
 
       // Admin verilerini kontrol et
-      const adminResponse = await fetch("http://localhost:1337/api/admins", {
+      const adminResponse = await fetch("http://34.107.58.215:1337/api/admins", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

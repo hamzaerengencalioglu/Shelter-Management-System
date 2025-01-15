@@ -29,7 +29,7 @@ function AnimalManagement() {
   const fetchUserShelter = async (userId) => {
     try {
       const response = await fetch(
-        `http://localhost:1337/api/shelters?populate=shelter_manager`
+        `http://34.107.58.215:1337/api/shelters?populate=shelter_manager`
       );
       if (!response.ok) {
         throw new Error("Barınak bilgileri alınamadı!");
@@ -68,7 +68,7 @@ function AnimalManagement() {
       const formData = new FormData();
       formData.append("files", animalImage);
 
-      const uploadResponse = await fetch("http://localhost:1337/api/upload", {
+      const uploadResponse = await fetch("http://34.107.58.215:1337/api/upload", {
         method: "POST",
         body: formData,
       });
@@ -97,7 +97,7 @@ function AnimalManagement() {
         },
       };
 
-      const animalResponse = await fetch("http://localhost:1337/api/animals", {
+      const animalResponse = await fetch("http://34.107.58.215:1337/api/animals", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

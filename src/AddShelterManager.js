@@ -18,7 +18,7 @@ function AddShelterManager() {
 
   const fetchShelters = async () => {
     try {
-      const response = await fetch("http://localhost:1337/api/shelters");
+      const response = await fetch("http://34.107.58.215:1337/api/shelters");
       if (!response.ok) {
         throw new Error("Barınaklar alınamadı");
       }
@@ -33,7 +33,7 @@ function AddShelterManager() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:1337/api/shelter-managers", {
+      const response = await fetch("http://34.107.58.215:1337/api/shelter-managers", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
