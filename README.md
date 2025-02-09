@@ -1,52 +1,27 @@
-🐶 Pet Adoption System – Animal Adoption Platform 🐱
-This project is a pet adoption platform designed to connect users who want to adopt pets with shelters.
-Frontend is built with React, and Backend is powered by Strapi.
+et Adoption System – Animal Adoption Platform 🐱
+This project is a pet adoption platform designed to help connect shelters with individuals who want to adopt pets.
+It provides a seamless experience for users to browse available animals, submit adoption requests, and manage shelters efficiently.
 
-🚀 Project Features
-✅ User Management
+Built with React for the frontend and Strapi for the backend, this system ensures a modern and user-friendly interface along with a scalable API.
 
+🚀 Features
+🧑‍💻 User Management
 Users can sign up and log in.
-Users can submit adoption requests and track their status.
-✅ Shelter Management
-
-Shelters can be added and updated.
-Each shelter can manage its own listed animals.
-✅ Animal Management
-
-Animals can be registered with their name, type, age, health status, adoption status, and color.
-Animal images can be uploaded and displayed in the system.
-✅ Adoption Process
-
-Users can apply to adopt an animal.
-Shelter managers can approve or reject adoption requests.
-✅ Search and Filtering
-
-Users can search for animals using filters like age, type, and health condition.
+Users can view all available pets and submit adoption requests.
+Users can track the status of their adoption requests.
+🏠 Shelter Management
+Shelter managers can add, edit, or delete animals in their shelter.
+Shelter details like name, location, and capacity can be managed.
+🐾 Animal Management
+Animals can be registered with name, type, age, health status, and adoption status.
+Each animal can have an image uploaded for better visibility.
+📜 Adoption Process
+Users can apply for adoption, and shelter managers can approve or reject requests.
+Adoption requests can have status updates such as Pending, Approved, or Rejected.
+🔍 Search & Filtering
+Users can search for pets using filters such as type, age, and health condition.
 🛠 Technologies Used
 Frontend: React.js
 Backend: Strapi
 Database: PostgreSQL
 API Management: Strapi REST API
-💻 Installation & Setup
-1️⃣ Clone the Repository
-sh
-Kopyala
-Düzenle
-git clone https://github.com/your-username/pet-adoption-system.git
-cd pet-adoption-system
-2️⃣ Backend Setup (Strapi)
-sh
-Kopyala
-Düzenle
-cd backend
-npm install
-npm run develop
-Access Strapi admin panel at: http://localhost:1337/admin
-3️⃣ Frontend Setup (React)
-sh
-Kopyala
-Düzenle
-cd frontend
-npm install
-npm start
-Access the React app at: http://localhost:3000/
